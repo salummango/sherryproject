@@ -1,0 +1,31 @@
+<html>
+<head>
+    <style>
+        .topnav{
+            overflow: hidden;
+            background-color:green;
+        }
+        /* Navbar links*/
+        .topnav a{
+            float: left;
+            display: block;
+            color: rgb(242, 207, 165);
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        /*links-change color on hover*/
+        .topnav a:hover{
+            background-color: rgb(112, 106, 98);
+            colour: black;
+        }
+    </style>
+</head>
+</html>
+<body>
+    <div class="topnav">
+        <a href="{%url 'PUBLIC_TRANSPORT:homepage'%}">Home</a>
+        <a href="passenger view">Add new Passenger</a>
+        <a href="passenger list">view Passenger</a>
+    </div>
+</body>

@@ -1,0 +1,34 @@
+<html>
+<head>
+    <style type="text/css">
+    .d1{
+        color:brown;
+        width:98%;
+        height:58px;
+        background:bisque;
+        margin: 1%;
+    }
+    .d2{
+        width:98%;
+        height:240px;
+        float: left;
+        margin-left:1%;
+    }
+    </style>
+</head>
+<body>
+    <div class="d1">
+        <marquee><h1 class="h1">WELCOME TO PUBLIC_TRANSPORT_APPLICATION</h1></marquee>
+    </div>
+    {% block navigation %} {% include 'navigation.html'%}{%endblock navigation%}
+    <div class="d2">
+        <form>
+            Passenger address:<br>
+            <input type="text" name="address"><br>
+            Passenger phonenumber:<br>
+            <input type="int" number="phonenumber">
+            <button>add</button>
+        </form>
+    </div>
+</body>
+</html>

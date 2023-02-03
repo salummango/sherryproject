@@ -1,0 +1,18 @@
+{%block pageContent %} {% load crispy_forms_tags %}
+<!DOCTYPE html>
+<html>
+<title>PUBLIC_TRANSPORT</title>
+
+<body>
+    {% block navigation %} {% include 'navigation.html'%}{%endblock navigation%}
+     <h1>WELCOME TO PUBLIC_TRANSPORT_APPLICATION</h1>
+     <p>DEAR PASSENGER KINDLY ENTER YOUR INFORMATIONS.</p>
+<form method = 'POST'>
+    {% csrf_token %} {{Passengerforms|crispy}}
+    <button type="submit">add</button>
+</form>
+
+</body>
+
+{% endblock pageContent %}
+</html>
